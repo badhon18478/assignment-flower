@@ -1,0 +1,300 @@
+.noto-serif-font {
+  font-family: 'Noto Serif', serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* global style */
+.orange {
+  color: #e95a08;
+}
+.dark {
+  color: #000000;
+}
+.primary-btn {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  width: 270px;
+  margin-top: 15px;
+  text-align: center;
+  height: 50px;
+  /* padding: 19px 80px; */
+  background-color: #e95a08;
+}
+/* General Body Styles */
+body {
+  margin: 0;
+  background-color: #f5f8ff; /* Light gray background */
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  padding: 20px 64px;
+  /* background-color: #fff; */
+}
+
+/* .logo-container {
+  display: flex;
+  align-items: center;
+} */
+
+.logo-img {
+  height: 4.5rem;
+  width: 8.1rem;
+  /* margin-left: 130px; */
+  margin-top: 20px;
+}
+.main-nav {
+  display: flex;
+  gap: 32px;
+}
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 32px; /* Space between nav items */
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #f97316; /* Orange hover color */
+}
+.dollor:hover {
+  color: #f97316;
+}
+.fa-solid:hover {
+  color: #f97316;
+}
+.cart {
+  display: flex;
+  align-items: center;
+  color: #555;
+  font-weight: 500;
+}
+
+.fa-solid {
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+  color: #555;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1140px;
+  padding: 96px 64px; /* Vertical and horizontal padding */
+  gap: 48px; /* Space between content and image */
+}
+
+.hero-content {
+  flex: 1; /* Takes up available space */
+  max-width: 570px; /* Limit content width */
+}
+
+.hero-title {
+  font-size: 60px; /* Large font size */
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 24px;
+  color: #000000;
+}
+
+.fresh-text {
+  color: #e95a08; /* Orange for "FRESH FLOWERS" */
+}
+
+.hero-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #000000;
+  max-width: 500px; /* Max width for description */
+}
+
+/* .hero-image-container {
+  display: flex;
+  justify-content: flex-end; 
+} */
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet and smaller desktops (e.g., up to 1024px) */
+@media (max-width: 1024px) {
+  .header {
+    padding: 15px 30px;
+  }
+
+  .main-nav ul {
+    gap: 20px;
+  }
+
+  .hero-section {
+    flex-direction: column; /* Stack content and image vertically */
+    text-align: center;
+    padding: 60px 30px;
+  }
+
+  .hero-content {
+    margin-bottom: 40px;
+    max-width: 100%; /* Allow content to take full width */
+  }
+
+  .hero-image-container {
+    justify-content: center; /* Center image when stacked */
+  }
+
+  .hero-title {
+    font-size: 60px;
+  }
+}
+
+/* Mobile devices (e.g., up to 768px) */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px; /* Adjust header padding */
+    /* justify-content: space-between; This is already default flex behavior */
+    /* align-items: center; */
+  }
+
+  /* Hide the navigation links on mobile */
+  .main-nav ul {
+    display: none;
+  }
+
+  .main-nav {
+    /* This container now only holds the cart for mobile */
+    justify-content: flex-end; /* Push cart to the right as per new image */
+    width: 100%; /* Take up full width to control cart position */
+    gap: 0; /* Remove gap if only cart is left */
+  }
+
+  .card {
+    /* No specific width needed, flex will handle it */
+    margin-left: auto; /* Push cart to the far right */
+    padding: 0;
+  }
+
+  /* Adjust logo position if needed */
+  .logo-container {
+    margin-right: auto; /* Push logo to the far left */
+  }
+
+  .hero-section {
+    flex-direction: column-reverse; /* Image above text on mobile */
+    padding: 30px 20px; /* Adjust padding for mobile */
+    gap: 24px; /* Space between image and text */
+  }
+
+  .hero-title {
+    font-size: 48px;
+    line-height: 1.2;
+    text-align: left; /* Align text left */
+  }
+
+  .hero-description {
+    font-size: 16px;
+    text-align: left; /* Align text left */
+  }
+
+  .hero-image-container {
+    justify-content: center; /* Center the image */
+  }
+
+  .hero-image {
+    width: 100%;
+    margin-right: 0px;
+  }
+}
+
+/* Small mobile devices (e.g., up to 480px) */
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 15px;
+  }
+
+  .logo-img {
+    height: 35px;
+  }
+
+  .cart span {
+    font-size: 14px;
+  }
+
+  .hero-section {
+    padding: 30px 15px;
+  }
+
+  .hero-title {
+    font-size: 38px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+}
+/* cart section style */
+.plants-section {
+  max-width: 1140px;
+  /* padding: px 64px; */
+  margin: 50px auto;
+  text-align: center;
+}
+.plants-title {
+  font-size: 50px;
+  font-weight: bold;
+}
+.plants-description {
+  font-size: 22px;
+  opacity: 50%;
+}
+plants-header {
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.card {
+  text-align: center;
+  /* max-width: 270px; */
+  height: 485px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+card-img {
+  width: 100%;
+  height: 250px;
+}
+.product-blossom {
+  font-size: 22px;
+  font-weight: medium;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+.product-usd {
+  font-size: 22px;
+  margin-top: 10px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
