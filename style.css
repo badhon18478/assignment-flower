@@ -19,6 +19,7 @@
   margin-top: 15px;
   text-align: center;
   height: 50px;
+  border-radius: 8px;
   /* padding: 19px 80px; */
   background-color: #e95a08;
 }
@@ -265,21 +266,26 @@ body {
 .plants-description {
   font-size: 22px;
   opacity: 50%;
+  margin-bottom: 50px;
 }
 plants-header {
 }
 .card-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  row-gap: 25px;
+  column-gap: 20px;
+  justify-content: center;
 }
-.card {
+.product-card {
+  background-color: #f5f8ff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   text-align: center;
-  /* max-width: 270px; */
-  height: 485px;
-  padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 100%;
 }
 card-img {
@@ -297,4 +303,74 @@ card-img {
   margin-top: 10px;
   font-weight: bold;
   margin-bottom: 0px;
+}
+
+/* Mobile devices (e.g., up to 768px) */
+@media (max-width: 768px) {
+  .plants-section {
+    padding: 20px 20px;
+    margin-top: 10px;
+  }
+
+  .plants-title {
+    font-size: 36px;
+    margin-top: 0px;
+  }
+
+  .plants-description {
+    font-size: 16px;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+  }
+  /* .product-image {
+    height: 200px; 
+  } */
+  .primary-btn {
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+/* Small mobile devices (e.g., up to 480px) */
+@media (max-width: 480px) {
+  /* .card span {
+        font-size: 14px;
+    } */
+
+  .plants-title {
+    font-size: 30px;
+  }
+
+  .plants-description {
+    font-size: 14px;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px; /* More space between stacked cards */
+  }
+
+  .product-image {
+    height: 220px; /* Make image slightly taller when single column */
+  }
+
+  .product-blossom,
+  .product-usd {
+    font-size: 18px;
+  }
+
+  .primary-btn {
+    font-size: 1rem;
+    height: 45px;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .product-card {
+    padding-bottom: 15px;
+  }
 }
