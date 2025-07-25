@@ -26,7 +26,7 @@
 /* General Body Styles */
 body {
   margin: 0;
-  background-color: #f5f8ff; /* Light gray background */
+  background-color: #f5f8ff;
 }
 
 /* Header Styles */
@@ -59,7 +59,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 32px; /* Space between nav items */
+  gap: 32px;
 }
 
 .main-nav a {
@@ -98,17 +98,17 @@ body {
   align-items: center;
   justify-content: space-between;
   max-width: 1140px;
-  padding: 96px 64px; /* Vertical and horizontal padding */
-  gap: 48px; /* Space between content and image */
+  padding: 96px 64px;
+  gap: 48px;
 }
 
 .hero-content {
-  flex: 1; /* Takes up available space */
-  max-width: 570px; /* Limit content width */
+  flex: 1;
+  max-width: 570px;
 }
 
 .hero-title {
-  font-size: 60px; /* Large font size */
+  font-size: 60px;
   font-weight: 800;
   line-height: 1.3;
   margin-bottom: 24px;
@@ -116,14 +116,14 @@ body {
 }
 
 .fresh-text {
-  color: #e95a08; /* Orange for "FRESH FLOWERS" */
+  color: #e95a08;
 }
 
 .hero-description {
   font-size: 18px;
   line-height: 1.6;
   color: #000000;
-  max-width: 500px; /* Max width for description */
+  max-width: 500px;
 }
 
 /* .hero-image-container {
@@ -136,9 +136,7 @@ body {
   height: auto;
 }
 
-/* Media Queries for Responsiveness */
-
-/* Tablet and smaller desktops (e.g., up to 1024px) */
+/* Tablet and smaller desktops (up to 1024px) */
 @media (max-width: 1024px) {
   .header {
     padding: 15px 30px;
@@ -149,18 +147,18 @@ body {
   }
 
   .hero-section {
-    flex-direction: column; /* Stack content and image vertically */
+    flex-direction: column;
     text-align: center;
     padding: 60px 30px;
   }
 
   .hero-content {
     margin-bottom: 40px;
-    max-width: 100%; /* Allow content to take full width */
+    max-width: 100%;
   }
 
   .hero-image-container {
-    justify-content: center; /* Center image when stacked */
+    justify-content: center;
   }
 
   .hero-title {
@@ -168,56 +166,50 @@ body {
   }
 }
 
-/* Mobile devices (e.g., up to 768px) */
+/* Mobile devices (up to 768px) */
 @media (max-width: 768px) {
   .header {
-    padding: 15px 20px; /* Adjust header padding */
-    /* justify-content: space-between; This is already default flex behavior */
-    /* align-items: center; */
+    padding: 15px 20px;
   }
 
-  /* Hide the navigation links on mobile */
   .main-nav ul {
     display: none;
   }
 
   .main-nav {
-    /* This container now only holds the cart for mobile */
-    justify-content: flex-end; /* Push cart to the right as per new image */
-    width: 100%; /* Take up full width to control cart position */
-    gap: 0; /* Remove gap if only cart is left */
+    justify-content: flex-end;
+    width: 100%;
+    gap: 0;
   }
 
   .card {
-    /* No specific width needed, flex will handle it */
-    margin-left: auto; /* Push cart to the far right */
+    margin-left: auto;
     padding: 0;
   }
 
-  /* Adjust logo position if needed */
   .logo-container {
-    margin-right: auto; /* Push logo to the far left */
+    margin-right: auto;
   }
 
   .hero-section {
-    flex-direction: column-reverse; /* Image above text on mobile */
-    padding: 30px 20px; /* Adjust padding for mobile */
-    gap: 24px; /* Space between image and text */
+    flex-direction: column-reverse;
+    padding: 30px 20px;
+    gap: 24px;
   }
 
   .hero-title {
     font-size: 48px;
     line-height: 1.2;
-    text-align: left; /* Align text left */
+    text-align: left;
   }
 
   .hero-description {
     font-size: 16px;
-    text-align: left; /* Align text left */
+    text-align: left;
   }
 
   .hero-image-container {
-    justify-content: center; /* Center the image */
+    justify-content: center;
   }
 
   .hero-image {
@@ -226,7 +218,7 @@ body {
   }
 }
 
-/* Small mobile devices (e.g., up to 480px) */
+/* Small mobile devices ( up to 480px) */
 @media (max-width: 480px) {
   .header {
     padding: 10px 15px;
@@ -305,7 +297,7 @@ card-img {
   margin-bottom: 0px;
 }
 
-/* Mobile devices (e.g., up to 768px) */
+/* Mobile devices ( up to 768px) */
 @media (max-width: 768px) {
   .plants-section {
     padding: 20px 20px;
@@ -346,16 +338,16 @@ card-img {
   }
 
   .plants-description {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px; /* More space between stacked cards */
+    gap: 25px;
   }
 
   .product-image {
-    height: 220px; /* Make image slightly taller when single column */
+    height: 220px;
   }
 
   .product-blossom,
@@ -372,5 +364,232 @@ card-img {
   }
   .product-card {
     padding-bottom: 15px;
+  }
+}
+
+.flower-plants-section {
+  border-radius: 12px;
+  margin-top: 200px;
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  /* width: 90%; */
+  /* overflow: hidden; */
+  position: relative;
+
+  /* margin: 50px auto;  */
+}
+.flower-content {
+  display: flex;
+  /* justify-content: space-around; */
+  /* padding-top: 100px; */
+  gap: 80px;
+  max-width: 1140px;
+  /* align-items: center; */
+}
+
+.section-image-flower {
+  width: 100%;
+  height: 100%;
+  max-width: 540px;
+  height: 580px;
+  object-fit: cover;
+  /* display: block; */
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.trusted-seller-badge {
+  position: absolute;
+  top: -100px;
+  left: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-12deg);
+}
+
+.trusted-seller-badge img {
+  max-width: 280px;
+  height: 280px;
+  /* object-fit: contain; */
+}
+.text-content {
+  /* padding: 50px 45px; */
+  display: flex;
+  max-width: 540px;
+  height: 550px;
+  margin-top: 0px;
+  text-align: left;
+  flex-direction: column;
+  /* justify-content: center; */
+  box-sizing: border-box;
+}
+
+.text-content h2 {
+  font-size: 3rem;
+  color: #000000;
+  margin-top: 38px;
+  margin-left: 0px;
+  /* margin-bottom: 28px; */
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.5px;
+}
+
+.text-content ul {
+  padding: 0;
+  margin: 0;
+}
+
+.text-content li {
+  margin-bottom: 20px;
+  /* padding-left: 32px; */
+  font-size: 1.15em;
+  line-height: 1.7;
+  color: #000000;
+  opacity: 50%;
+}
+
+/* Tablet and smaller desktops (up to 1024px) */
+@media (max-width: 1024px) {
+  .flower-plants-section {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 0 30px;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flower-content {
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .flower-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    order: 1;
+  }
+
+  .section-image-flower {
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .text-content {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    padding: 0 20px;
+    text-align: center;
+    order: 2;
+  }
+
+  .text-content h2 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .text-content ul {
+    padding-left: 0;
+    text-align: left;
+    list-style-position: inside;
+  }
+
+  .text-content li {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+
+  .trusted-seller-badge {
+    position: static;
+    transform: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    order: 0;
+    left: auto;
+    top: auto;
+  }
+
+  .trusted-seller-badge img {
+    max-width: 200px;
+    height: auto;
+  }
+}
+
+/* Mobile devices (up to 768px) */
+@media (max-width: 768px) {
+  .flower-plants-section {
+    margin-top: 60px;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    border-radius: 6px;
+  }
+
+  .flower-content {
+    gap: 30px;
+  }
+
+  .section-image-flower {
+    max-width: 100%;
+    height: 390px;
+    border-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+  .text-content {
+    padding: 0 10px;
+  }
+
+  .text-content h2 {
+    font-size: 2rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .text-content li {
+    font-size: 0.95em;
+    margin-bottom: 10px;
+  }
+
+  .trusted-seller-badge {
+    display: none;
+  }
+}
+
+/* Small mobile devices (up to 480px) */
+@media (max-width: 480px) {
+  .flower-plants-section {
+    margin-top: 40px;
+    padding: 0 10px;
+  }
+
+  .flower-content {
+    gap: 20px;
+  }
+
+  .section-image-flower {
+    height: 250px;
+  }
+
+  .text-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .text-content li {
+    font-size: 0.9em;
   }
 }
