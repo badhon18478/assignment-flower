@@ -10,6 +10,9 @@
 .dark {
   color: #000000;
 }
+.primary-btn:hover {
+  background-color: #f97316;
+}
 .primary-btn {
   color: #ffffff;
   font-size: 1.1rem;
@@ -70,7 +73,7 @@ body {
 }
 
 .main-nav a:hover {
-  color: #f97316; /* Orange hover color */
+  color: #f97316;
 }
 .dollor:hover {
   color: #f97316;
@@ -321,7 +324,7 @@ body {
   }
 }
 
-/* Small mobile devices (e.g., up to 480px) */
+/* Small mobile devices (480px) */
 @media (max-width: 480px) {
   /* .card span {
         font-size: 14px;
@@ -625,9 +628,9 @@ body {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
-  background-size: cover; /* Important for background image */
-  background-position: center; /* Important for background image */
-  background-repeat: no-repeat; /* Important for background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
@@ -639,8 +642,6 @@ body {
 .deal-card:hover {
   transform: translateY(-5px);
 }
-
-/* Remove .deal-image as it's no longer an <img> tag */
 
 .deal-overlay {
   position: relative;
@@ -877,7 +878,7 @@ body {
   background-color: #d44c00;
 }
 
-/* Media Queries for Join the Colorful Bunch Section */
+/* Media Queries for Bunch Section */
 @media (max-width: 1024px) {
   .join-bunch-section {
     padding: 80px 30px;
@@ -922,5 +923,197 @@ body {
 
   .join-bunch-title {
     font-size: 24px;
+  }
+}
+/* Footer Section Styles */
+.footer-section {
+  background-color: #f5f8ff;
+  padding: 20px 64px 20px;
+  margin-top: 50px;
+  color: #555;
+  font-size: 15px;
+}
+
+.footer-content {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.about-col {
+  max-width: 300px;
+  min-width: 250px;
+}
+
+.footer-logo {
+  height: 4.5rem;
+  width: 8.1rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.footer-description {
+  line-height: 1.6;
+}
+
+.footer-heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.footer-heading::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #e95a08;
+  margin-top: 10px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #e95a08;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #000000;
+  color: #777;
+}
+
+/* Media Queries for Footer Section */
+@media (max-width: 1024px) {
+  .footer-section {
+    padding: 40px 30px 15px;
+    margin-top: 60px;
+  }
+
+  .footer-content {
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .footer-col {
+    min-width: 180px;
+    flex-basis: 45%;
+    text-align: center;
+  }
+
+  .about-col {
+    max-width: 100%;
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin: 0 auto 20px auto;
+  }
+
+  .footer-heading::after {
+    margin: 10px auto 0 auto;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    padding: 30px 20px 10px;
+    margin-top: 40px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .footer-col {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .about-col {
+    margin-bottom: 0;
+  }
+
+  .footer-heading {
+    margin-bottom: 15px;
+  }
+
+  .footer-heading::after {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section {
+    padding: 20px 15px 10px;
+  }
+
+  .footer-logo {
+    height: 4rem;
+    width: 7rem;
+  }
+
+  .footer-description,
+  .footer-links li,
+  .footer-bottom p {
+    font-size: 14px;
+  }
+
+  .social-icon {
+    width: 28px;
+    height: 28px;
   }
 }
